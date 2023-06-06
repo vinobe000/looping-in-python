@@ -1,0 +1,67 @@
+
+In [11]: n=5
+
+In [12]: for i in range(n):
+    ...:     print(" "*(n-i)+"*"*i)
+    ...:
+
+    *
+   **
+  ***
+ ****
+
+In [13]: for i in range(n):
+    ...:     print(" "*(n-i)+"* "*i)
+    ...:
+
+    *
+   * *
+  * * *
+ * * * *
+
+In [14]: for i in range(n):
+    ...:     print("*"*n)
+    ...:
+*****
+*****
+*****
+*****
+*****
+
+In [15]: for i in range(n):
+    ...:     print(chr(97)*n)
+    ...:
+aaaaa
+aaaaa
+aaaaa
+aaaaa
+aaaaa
+
+In [16]: for i in range(n):
+    ...:     print(chr(65)*n)
+    ...:
+AAAAA
+AAAAA
+AAAAA
+AAAAA
+AAAAA
+
+In [17]: for i in range(n):
+    ...:     print(chr(65+i)*n)
+    ...:
+AAAAA
+BBBBB
+CCCCC
+DDDDD
+EEEEE
+
+In [18]: for i in range(n):
+    ...:     print((ord(chr(65+i)))*n)
+    ...:
+325
+330
+335
+340
+345
+
+In [19]:
