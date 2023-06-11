@@ -1,0 +1,42 @@
+
+In [16]: for i in range(n):
+    ...:     for j in range(n-i):
+    ...:         print(' ',end="")
+    ...:     for j in range(i):
+    ...:         print("* ",end="")
+    ...:     print()
+    ...: for i in range(n):
+    ...:     for k in range(i):
+    ...:         print(' ',end="")
+    ...:     for k in range(n-i):
+    ...:         print("* ",end="")
+    ...:     print()
+    ...:
+
+    *
+   * *
+  * * *
+ * * * *
+* * * * *
+ * * * *
+  * * *
+   * *
+    *
+
+In [17]: for i in range(n):
+    ...:     print(" "*(n-i)+"* "*i)
+    ...: for i in range(n):
+    ...:     print(" "*(i)+" *"*(n-i-1))
+    ...:
+
+    *
+   * *
+  * * *
+ * * * *
+ * * * *
+  * * *
+   * *
+    *
+
+
+In [18]:
